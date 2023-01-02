@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<body>
+<h2>Javascript object constructors</h2>
+
+<p id="demo"></p>
+<script>
+//Constructor function for Person objects
+
+function Person(first,last,age,height)
+{
+	this.firstName = first;
+	this.lastName = last;
+	this.age = age;
+	this.height = height;
+	}
+	
+// Create a person object
+
+const myFather = new Person("xyz","abc",59,"blue");
+const myMother = new Person("pqr","abc",55,"5feet");
+// Display age
+document.getElementById("demo").innerHTML = "My father is " + myFather.age +".";
+</script>
+</body>
+</html>	
